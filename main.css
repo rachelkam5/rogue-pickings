@@ -1,0 +1,246 @@
+@font-face{
+	font-family: 'Wisdom Script';
+	src: url('../fonts/wisdom-script.otf') format('opentype');
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.875em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+	font-size: 1.125em;
+}
+h4 {
+	font-size: .75em;
+}
+
+p {
+	font-size: .875em;
+	line-height: 1.3125em;
+    padding: 0 1.875em;
+}
+
+/*The widths are in a percentage!*/
+header {
+	width: 100%;
+	font-size: .875em;
+	margin: 0 auto;
+}
+
+header h1 {
+	font-size: 2.15em;
+	text-align: center;
+	margin: 0;
+	padding: 1.25em 0 .5em;
+	border-bottom: .07em solid #77a466;
+}
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	text-align: center;
+	padding: 1em 0;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1em;
+	padding: .5em;
+	list-style-type: none;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	width: 100%;
+	font-size: .875em;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.main-image img {
+	width: 100%;
+	border-bottom: .075em solid #77a466;
+}
+
+.main-title h3 {
+	text-align: center;
+	font-size: 1em;
+	padding: 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	border-top: 1px solid #eee;
+}
+
+.section-one h4 {
+	text-align: center;
+	font-size: 1em;
+	padding: .25em 0;
+}
+
+.section-two h4,
+.section-three h4 {
+	padding-top: .25em;
+	font-size: 1em;
+	text-align: center;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: .25em 0;
+	color:#77a466;
+	text-align: center;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	text-align: center;
+	line-height: 1.5em;
+
+}
+
+.address {
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	width: 100%;
+	font-size: .75em;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	text-align: center;
+}
+
+footer h4 {
+	font-size: 1em;
+}
+
+footer span {
+	font-family: 'Wisdom Script', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 1em;
+}
+
+@media all and (min-width:768px) {
+
+	header h1 {
+		font-size: 3em;
+	}
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 33.33%;
+		float: left;
+	}
+
+	footer {
+		font-size: 1.75em;
+		clear: both;
+	}
+}
+
+@media all and (min-width:940px) {
+
+	header h1 {
+		font-size: 1.5em;
+		float: left;
+		border-bottom: none;
+	}
+
+	header nav {
+		float: right;
+		padding-top: 3em;
+		font-size: .75em;
+	}
+
+	header nav li {
+		display: inline;
+	}
+
+	.main-image img {
+		border-top: 3px solid #77a466;
+	}
+
+	.top-section h3 {
+		text-align: left;
+	}
+
+	.top-section p {
+		font-size: 1em;
+		text-align: left;
+		line-height: 1.75em;
+	}
+
+	.bottom-section p {
+		text-align: left;
+		line-height: 1.75em;
+	}
+
+	.bottom-section li {
+		text-align: left;
+		padding: .75em 0;
+	}
+
+	.section-two {
+		width: 33%;
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+
+	footer {
+		font-size: 1em;
+		border-top: 1px solid #eee;
+	}
+}
